@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Prasad Vidhyabaskaran — Composer for Film &amp; Orchestra</title>
+  <meta name="description" content="Official portfolio of Prasad Vidhyabaskaran, composer for film, theater, and orchestra. Listen to original orchestral scores, film soundtracks, and score videos.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Fraunces:opsz,wght@9..144,300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Particle Wave Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="Prasad Vidhyabaskaran Home">
+        <span class="logo-text">PV</span>
+        <span class="logo-fullname">Prasad Vidhyabaskaran</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#spotlight" class="nav-link">Spotlight</a>
+        <a href="#works" class="nav-link">Selected Work</a>
+        <a href="#listen" class="nav-link">Listen &amp; Stream</a>
+        <a href="#contact" class="nav-link btn-nav-cta">Get in Touch</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-badge-wrap">
+          <span class="hero-badge"><span class="badge-dot"></span> Composer for Film &amp; Orchestra</span>
+        </div>
+        
+        <h1 class="hero-title">Prasad Vidhyabaskaran</h1>
+        
+        <p class="hero-tagline">
+          Original Orchestral and Hybrid scores for short films, and concert work for orchestra.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#works" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Explore Selected Work
+          </a>
+          <a href="https://open.spotify.com/artist/2p4Fi2HEBP19TP1AECHHA6?si=_HYrMtjITRi7ZepSoubTjg" target="_blank" rel="noopener" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.517 17.324c-.217.356-.68.468-1.036.251-2.836-1.733-6.406-2.126-10.612-1.164-.403.092-.809-.164-.901-.567-.092-.403.164-.809.567-.901 4.605-1.053 8.536-.605 11.731 1.346.356.217.468.68.251 1.035zm1.472-3.275c-.273.443-.854.582-1.297.31-3.245-1.995-8.192-2.574-12.03-1.408-.501.152-1.026-.134-1.178-.636-.152-.501.134-1.026.636-1.178 4.385-1.332 9.839-.687 13.559 1.6 443.273.582.854.31 1.297zm.127-3.414C15.228 8.41 8.827 8.196 5.143 9.313c-.611.185-1.252-.167-1.437-.778-.185-.611.167-1.252.778-1.437 4.237-1.286 11.3-1.042 15.828 1.647.55.326.731 1.037.405 1.587-.326.55-1.037.731-1.587.405z"/></svg>
+            Listen on Spotify
+          </a>
+        </div>
+
+        <div class="hero-scroll-hint">
+          <span>Scroll to Discover</span>
+          <div class="scroll-arrow">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Musical Staff Line Divider -->
+    <div class="staff-divider">
+      <div class="staff-lines"></div>
+      <div class="treble-clef-icon">🎼</div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="image-frame">
+              <img class="about-photo" id="profile-img" alt="Prasad Vidhyabaskaran speaking on stage at an orchestral concert">
+              <div class="frame-caption">
+                <span class="caption-icon">🎙️</span>
+                <span>Concert Debut &amp; Speaking Engagement</span>
+              </div>
+            </div>
+            
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Years Composing</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">35+</span>
+                <span class="stat-label">Original Works</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Short Films Scored</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Live Orchestra Feature</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content-column">
+            <span class="sub-heading">Biography</span>
+            <h2 class="section-title">About</h2>
+            
+            <div class="about-text">
+              <p>
+                <strong>A self-taught composer and multi-instrumentalist</strong>, Prasad Vidhyabaskaran was drawn to music from an early age as an avid listener of classical music and Hollywood film scores. Since picking up the keyboard and guitar in 2011, he has transitioned from arranging instrumental covers to composing original orchestral music using DAWs, notation software, and modern sample libraries.
+              </p>
+              
+              <p>
+                Prasad made his public debut in September 2016, composing the original background score and performing live guitar from the music pit for <em>Once Upon a Time</em>, the 6th annual theatrical production by the San Francisco Bay Area community group Swaram. In December 2024, his orchestral piece <em>Sentience</em> was selected for live performance at the End-of-the-Year concert by the <a href="https://awesomeorchestra.org/" target="_blank" rel="noopener" class="inline-link">Awesöme Orchestra Collective</a>, conducted by Brian Adam McCune. Prasad has also composed original music for two short films: the Tamil-language <em>Rudra: Origin Story</em> and the English-language <em>Customer Service</em>.
+              </p>
+
+              <p>
+                In addition to his film and theater work, he independently releases numerous standalone pieces, weaving together a diverse range of influences to create evocative compositions.
+              </p>
+            </div>
+
+            <div class="skills-chips">
+              <span class="chip">Orchestral Scoring</span>
+              <span class="chip">Film Soundtracks</span>
+              <span class="chip">Hybrid Synth &amp; Acoustics</span>
+              <span class="chip">Live Theater Pit Score</span>
+              <span class="chip">Score Notation</span>
+              <span class="chip">DAW &amp; Virtual Instrument Mockups</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Concert Spotlight Card -->
+    <section class="spotlight-section" id="spotlight">
+      <div class="container">
+        <div class="spotlight-card">
+          <div class="spotlight-badge">CONCERT SPOTLIGHT · DEC 2024</div>
+          <div class="spotlight-body">
+            <div class="spotlight-main">
+              <h3 class="spotlight-title">Sentience — Live Orchestral Premiere</h3>
+              <p class="spotlight-desc">
+                Original orchestral score selected for live performance at the End-of-the-Year concert by the <strong>Awesöme Orchestra Collective</strong> in the San Francisco Bay Area, conducted by <strong>Brian Adam McCune</strong>.
+              </p>
+              <div class="embed-container" style="margin-bottom: 20px;">
+                <iframe src="https://www.youtube-nocookie.com/embed/wRE8A1vBQ34?start=5448" title="Sentience - Awesöme Orchestra Concert Performance" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="spotlight-tags">
+                <span>Symphonic Orchestra</span>
+                <span>California Bay Area</span>
+                <span>Live Conductor Performance</span>
+              </div>
+            </div>
+            <div class="spotlight-quote">
+              <blockquote>
+                “Weaving lush string arrangements, brass fanfares, and delicate woodwind textures into a captivating cinematic arc.”
+              </blockquote>
+              <div class="quote-author">— Concert Program Feature</div>
+              <div style="margin-top: 20px;">
+                <a href="https://www.youtube.com/watch?v=wRE8A1vBQ34&t=5448s" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 13px; padding: 10px 20px;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  Watch Concert Performance
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff Divider Motif -->
+    <div class="staff-divider">
+      <div class="staff-lines"></div>
+    </div>
+
+    <!-- Selected Works Section -->
+    <section class="works-section" id="works">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="sub-heading">Portfolio</span>
+            <h2 class="section-title">Selected Work</h2>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="filter-tabs" id="filter-tabs">
+            <button class="tab-btn active" data-filter="all">All Projects</button>
+            <button class="tab-btn" data-filter="orchestral">Orchestral &amp; Concert</button>
+            <button class="tab-btn" data-filter="film">Short Films &amp; Theater</button>
+            <button class="tab-btn" data-filter="playlists">Playlists &amp; Score Videos</button>
+          </div>
+        </div>
+
+        <div class="works-grid" id="works-grid">
+
+          <!-- Work 1 -->
+          <article class="work-card media-card" data-category="orchestral">
+            <div class="work-card-header">
+              <span class="category-badge orchestral">Orchestral</span>
+              <span class="work-date">Dec 2024</span>
+            </div>
+            <h3 class="work-title">Sentience</h3>
+            <p class="work-details">
+              Original orchestral score selected for live performance at the End-of-the-Year concert by the Awesöme Orchestra Collective, a community orchestra based in the California Bay Area, conducted by Brian Adam McCune.
+            </p>
+            <div class="embed-container">
+              <iframe src="https://www.youtube-nocookie.com/embed/wRE8A1vBQ34?start=5448" title="Sentience - Awesöme Orchestra Concert Performance" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="stream-links" style="margin-top: 12px;">
+              <a href="https://www.youtube.com/watch?v=wRE8A1vBQ34&t=5448s" target="_blank" rel="noopener" class="stream-btn yt">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Watch Concert (1:30:48)
+              </a>
+              <a href="https://open.spotify.com/artist/2p4Fi2HEBP19TP1AECHHA6?si=_HYrMtjITRi7ZepSoubTjg" target="_blank" rel="noopener" class="stream-btn sp">
+                Spotify
+              </a>
+              <a href="https://music.apple.com/us/artist/prasad-vidhyabaskaran/1585522902" target="_blank" rel="noopener" class="stream-btn ap">
+                Apple Music
+              </a>
+            </div>
+            <div class="work-footer">
+              <span class="work-meta-item"> Full Orchestra</span>
+              <span class="work-meta-item"> Live Performance</span>
+            </div>
+          </article>
+
+          <!-- Work 2 -->
+          <article class="work-card media-card" data-category="film">
+            <div class="work-card-header">
+              <span class="category-badge film">Short Film</span>
+              <span class="work-date">Tamil</span>
+            </div>
+            <h3 class="work-title">Rudra: Origin Story</h3>
+            <p class="work-details">
+              Scored over 12 minutes of original music for the short film.
+            </p>
+            <div class="embed-container">
+              <iframe src="https://www.youtube-nocookie.com/embed/118-H3t29h4" title="Rudra: Origin Story" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="stream-links" style="margin-top: 12px;">
+              <a href="https://www.youtube.com/watch?v=118-H3t29h4" target="_blank" rel="noopener" class="stream-btn yt">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Watch Film on YouTube
+              </a>
+            </div>
+            <div class="work-footer">
+              <span class="work-meta-item"> 12+ Min Score</span>
+              <span class="work-meta-item"> Original Soundtrack</span>
+            </div>
+          </article>
+
+          <!-- Work 3 -->
+          <article class="work-card" data-category="film">
+            <div class="work-card-header">
+              <span class="category-badge film">Short Film</span>
+              <span class="work-date">English · Upcoming</span>
+            </div>
+            <h3 class="work-title">Customer Service</h3>
+            <p class="work-details">
+              Scoring an upcoming English-language short film.
+            </p>
+            <div class="stream-links">
+              <span class="status-pill">In Production</span>
+            </div>
+            <div class="work-footer">
+              <span class="work-meta-item"> English Film</span>
+              <span class="work-meta-item"> Film Score</span>
+            </div>
+          </article>
+
+          <!-- Work 4: Playlist 1 Embed -->
+          <article class="work-card media-card" data-category="playlists">
+            <div class="work-card-header">
+              <span class="category-badge playlist">Playlist</span>
+              <span class="work-date">26 Videos</span>
+            </div>
+            <h3 class="work-title">Original Compositions</h3>
+            <p class="work-details">
+              A running collection of original instrumental and song work.
+            </p>
+            <div class="embed-container">
+              <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLQHLffSElII8Tii0vs5eT6RIVA_3_bgYj" title="Original Compositions playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="stream-links" style="margin-top: 12px;">
+              <a href="https://www.youtube.com/playlist?list=PLQHLffSElII8Tii0vs5eT6RIVA_3_bgYj" target="_blank" rel="noopener" class="stream-btn yt">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Open Playlist on YouTube
+              </a>
+            </div>
+          </article>
+
+          <!-- Work 5: Playlist 2 Embed -->
+          <article class="work-card media-card" data-category="playlists">
+            <div class="work-card-header">
+              <span class="category-badge score">Score Notation</span>
+              <span class="work-date">9 Videos</span>
+            </div>
+            <h3 class="work-title">Score Videos</h3>
+            <p class="work-details">
+              Original compositions presented with score notation.
+            </p>
+            <div class="embed-container">
+              <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLQHLffSElII-dbqawTy1OV9iY6NvrULDU" title="Score Videos playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="stream-links" style="margin-top: 12px;">
+              <a href="https://www.youtube.com/playlist?list=PLQHLffSElII-dbqawTy1OV9iY6NvrULDU" target="_blank" rel="noopener" class="stream-btn yt">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Open Playlist on YouTube
+              </a>
+            </div>
+          </article>
+
+          <!-- Work 6: Theater Debut -->
+          <article class="work-card" data-category="film">
+            <div class="work-card-header">
+              <span class="category-badge theater">Theater Pit</span>
+              <span class="work-date">Sep 2016</span>
+            </div>
+            <h3 class="work-title">Once Upon a Time</h3>
+            <p class="work-details">
+              Composed the original background score and performed live guitar from the music pit for Swaram's 6th annual theatrical production in the SF Bay Area.
+            </p>
+            <div class="work-footer">
+              <span class="work-meta-item"> Live Guitar</span>
+              <span class="work-meta-item"> Theater Score</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Listen & Stream Section with Embedded Spotify Player -->
+    <section class="listen-section" id="listen">
+      <div class="container">
+        <div class="section-header center">
+          <span class="sub-heading">Streaming Platforms</span>
+          <h2 class="section-title">Listen &amp; Stream</h2>
+          <p class="section-subtitle">Stream original tracks and orchestral suites on Spotify or watch score videos on YouTube.</p>
+        </div>
+
+        <!-- Embedded Spotify Player -->
+        <div class="spotify-embed-card">
+          <iframe style="border-radius:12px; width:100%; height:352px;" 
+            src="https://open.spotify.com/embed/artist/2p4Fi2HEBP19TP1AECHHA6?utm_source=generator&theme=0" 
+            frameborder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="streaming-grid">
+          <a href="https://open.spotify.com/artist/2p4Fi2HEBP19TP1AECHHA6?si=_HYrMtjITRi7ZepSoubTjg" target="_blank" rel="noopener" class="streaming-card spotify">
+            <div class="platform-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.517 17.324c-.217.356-.68.468-1.036.251-2.836-1.733-6.406-2.126-10.612-1.164-.403.092-.809-.164-.901-.567-.092-.403.164-.809.567-.901 4.605-1.053 8.536-.605 11.731 1.346.356.217.468.68.251 1.035zm1.472-3.275c-.273.443-.854.582-1.297.31-3.245-1.995-8.192-2.574-12.03-1.408-.501.152-1.026-.134-1.178-.636-.152-.501.134-1.026.636-1.178 4.385-1.332 9.839-.687 13.559 1.6 443.273.582.854.31 1.297zm.127-3.414C15.228 8.41 8.827 8.196 5.143 9.313c-.611.185-1.252-.167-1.437-.778-.185-.611.167-1.252.778-1.437 4.237-1.286 11.3-1.042 15.828 1.647.55.326.731 1.037.405 1.587-.326.55-1.037.731-1.587.405z"/></svg>
+            </div>
+            <div class="platform-info">
+              <h3>Spotify</h3>
+              <span>Prasad Vidhyabaskaran on Spotify</span>
+            </div>
+            <span class="platform-arrow">→</span>
+          </a>
+
+          <a href="https://music.apple.com/us/artist/prasad-vidhyabaskaran/1585522902" target="_blank" rel="noopener" class="streaming-card applemusic">
+            <div class="platform-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.32c.57-.7.96-1.68.85-2.66-.83.03-1.85.55-2.44 1.25-.53.62-.99 1.61-.87 2.57.93.07 1.88-.46 2.46-1.16z"/></svg>
+            </div>
+            <div class="platform-info">
+              <h3>Apple Music</h3>
+              <span>Prasad Vidhyabaskaran on Apple Music</span>
+            </div>
+            <span class="platform-arrow">→</span>
+          </a>
+
+          <a href="https://youtube.com/@prasadvidhyabaskaran" target="_blank" rel="noopener" class="streaming-card youtube">
+            <div class="platform-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <div class="platform-info">
+              <h3>YouTube</h3>
+              <span>@prasadvidhyabaskaran · Playlists &amp; Videos</span>
+            </div>
+            <span class="platform-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <span class="sub-heading">Collaborate</span>
+              <h2 class="section-title">Get in Touch</h2>
+              <p class="contact-lead">
+                Open to film, TV, game, and concert commissions for productions anywhere in the world.
+              </p>
+
+              <div class="email-box">
+                <span class="email-label">Direct Email:</span>
+                <div class="email-row">
+                  <a href="mailto:pvidh05@gmail.com" class="email-address" id="email-text">pvidh05@gmail.com</a>
+                  <button class="btn-copy" id="btn-copy-email" aria-label="Copy Email Address">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span id="copy-btn-label">Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="social-links-wrap">
+                <span class="social-label">Follow &amp; Connect:</span>
+                <div class="social-links">
+                  <a href="https://open.spotify.com/artist/2p4Fi2HEBP19TP1AECHHA6?si=_HYrMtjITRi7ZepSoubTjg" target="_blank" rel="noopener" class="social-btn" aria-label="Spotify Artist Page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.517 17.324c-.217.356-.68.468-1.036.251-2.836-1.733-6.406-2.126-10.612-1.164-.403.092-.809-.164-.901-.567-.092-.403.164-.809.567-.901 4.605-1.053 8.536-.605 11.731 1.346.356.217.468.68.251 1.035zm1.472-3.275c-.273.443-.854.582-1.297.31-3.245-1.995-8.192-2.574-12.03-1.408-.501.152-1.026-.134-1.178-.636-.152-.501.134-1.026.636-1.178 4.385-1.332 9.839-.687 13.559 1.6 443.273.582.854.31 1.297zm.127-3.414C15.228 8.41 8.827 8.196 5.143 9.313c-.611.185-1.252-.167-1.437-.778-.185-.611.167-1.252.778-1.437 4.237-1.286 11.3-1.042 15.828 1.647.55.326.731 1.037.405 1.587-.326.55-1.037.731-1.587.405z"/></svg>
+                    Spotify
+                  </a>
+                  <a href="https://music.apple.com/us/artist/prasad-vidhyabaskaran/1585522902" target="_blank" rel="noopener" class="social-btn" aria-label="Apple Music Artist Page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.32c.57-.7.96-1.68.85-2.66-.83.03-1.85.55-2.44 1.25-.53.62-.99 1.61-.87 2.57.93.07 1.88-.46 2.46-1.16z"/></svg>
+                    Apple Music
+                  </a>
+                  <a href="https://youtube.com/@prasadvidhyabaskaran" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube Channel">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    YouTube
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-wrap">
+              <h3 class="form-title">Send a Project Enquiry</h3>
+              <form class="contact-form" id="enquiry-form">
+                <div class="form-group">
+                  <label for="name">Your Name / Production Team</label>
+                  <input type="text" id="name" required placeholder="e.g. Jane Doe / Production Co">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" required placeholder="name@domain.com">
+                </div>
+                <div class="form-group">
+                  <label for="project-type">Project Type</label>
+                  <select id="project-type">
+                    <option value="film">Short Film / Feature Film Score</option>
+                    <option value="orchestra">Concert / Orchestral Commission</option>
+                    <option value="tv-game">TV / Video Game / Media Soundtrack</option>
+                    <option value="theater">Theater / Live Performance</option>
+                    <option value="other">Other Inquiry</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Project Description &amp; Timeline</label>
+                  <textarea id="message" rows="4" required placeholder="Tell me about your project, story, aesthetic, and timeline..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                  Send Enquiry
+                </button>
+                <div id="form-feedback" class="form-feedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="footer-title">Prasad Vidhyabaskaran</span>
+        <span class="footer-tag">Composer for Film &amp; Orchestra</span>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Prasad Vidhyabaskaran. All rights reserved.
+      </div>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        ↑ Top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast">Email address copied to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

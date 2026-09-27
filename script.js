@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (feedback) {
           feedback.style.display = 'block';
           feedback.style.color = '#ff6b6b';
-          feedback.textContent = 'Something went wrong. Please try again or email pvidh05@gmail.com directly.';
+          feedback.textContent = 'Something went wrong. Please try submitting again.';
         }
       });
     });

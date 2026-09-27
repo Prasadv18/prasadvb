@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const filter = btn.getAttribute('data-filter');
 
       workCards.forEach(card => {
-        const cat = card.getAttribute('data-category');
-        if (filter === 'all' || cat === filter) {
+        const cat = card.getAttribute('data-category') || '';
+        if (filter === 'all' || cat.includes(filter)) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';
@@ -88,21 +88,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 
-  // 8. Contact Form Handling
+  // 8. Contact Form Handling (FormSubmit via AJAX)
   const form = document.getElementById('enquiry-form');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const feedback = document.getElementById('form-feedback');
-      if (feedback) {
-        feedback.style.display = 'block';
-        feedback.style.color = 'var(--gold-light)';
-        feedback.textContent = 'Thank you! Your project enquiry has been submitted.';
-        form.reset();
-        setTimeout(() => {
-          feedback.style.display = 'none';
-        }, 5000);
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
       }
+
+      const formData = new FormData(form);
+
+      fetch('https://formsubmit.co/ajax/pisasu05@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Enquiry';
+        }
+        if (feedback) {
+          feedback.style.display = 'block';
+          feedback.style.color = 'var(--gold-light)';
+          feedback.textContent = 'Thank you! Your project enquiry has been sent successfully.';
+          form.reset();
+          setTimeout(() => {
+            feedback.style.display = 'none';
+          }, 6000);
+        }
+      })
+      .catch(error => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Enquiry';
+        }
+        if (feedback) {
+          feedback.style.display = 'block';
+          feedback.style.color = '#ff6b6b';
+          feedback.textContent = 'Something went wrong. Please try again or email pvidh05@gmail.com directly.';
+        }
+      });
     });
   }
 

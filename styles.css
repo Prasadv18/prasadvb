@@ -413,6 +413,12 @@ a:hover {
   background: rgba(225, 48, 108, 0.12);
 }
 
+.social-chip.sc:hover {
+  border-color: #FF5500;
+  color: #FF5500;
+  background: rgba(255, 85, 0, 0.12);
+}
+
 .social-chip.em:hover {
   border-color: var(--gold);
   color: var(--gold-light);

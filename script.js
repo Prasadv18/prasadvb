@@ -41,27 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 6. Works Filter Tabs
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const workCards = document.querySelectorAll('.work-card');
 
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      workCards.forEach(card => {
-        const cat = card.getAttribute('data-category') || '';
-        if (filter === 'all' || cat.includes(filter)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
 
   // 7. Copy Email to Clipboard
   const btnCopy = document.getElementById('btn-copy-email');

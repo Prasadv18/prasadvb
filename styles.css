@@ -892,6 +892,12 @@ a:hover {
   color: var(--gold-light);
 }
 
+.stream-btn.ff:hover {
+  background: rgba(255, 90, 95, 0.15);
+  border-color: #ff5a5f;
+  color: #ff5a5f;
+}
+
 .status-pill {
   display: inline-block;
   font-size: 12px;
